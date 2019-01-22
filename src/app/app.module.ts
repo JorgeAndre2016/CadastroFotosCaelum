@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { FotoModule } from './foto/foto.module';
 import { PainelModule } from './painel/painel.module';
+import { CadastroFotoModule } from './cadastro-foto/cadastro-foto.module';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { PainelModule } from './painel/painel.module';
     BrowserModule,
     FotoModule,
     PainelModule,
+    CadastroFotoModule,
     HttpClientModule
   ],
   providers: [],

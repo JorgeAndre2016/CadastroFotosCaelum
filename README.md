@@ -2,7 +2,7 @@
 
 Projeto idealizado pela Caelum, book de fotos.
 
-** Funcionalidades
+**Funcionalidades
 
 1. Listagem das fotos
 2. Cadastro de novas fotos
