@@ -5,17 +5,19 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { FotoModule } from './foto/foto.module';
 import { PainelModule } from './painel/painel.module';
-import { CadastroFotoModule } from './cadastro-foto/cadastro-foto.module';
+import { CadastroFotoComponent } from './cadastro-foto/cadastro-foto.component';
+import { ListagemComponent } from './listagem/listagem.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CadastroFotoComponent,
+    ListagemComponent
   ],
   imports: [
     BrowserModule,
     FotoModule,
     PainelModule,
-    CadastroFotoModule,
     HttpClientModule
   ],
   providers: [],
