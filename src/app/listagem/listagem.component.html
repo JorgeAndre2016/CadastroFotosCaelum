@@ -19,7 +19,7 @@
     </div>
     <div class="row">
       <div class="col-12">
-        <app-painel *ngFor="let ft of fotos" titulo="{{ft.titulo}}">
+        <app-painel *ngFor="let ft of fotos" titulo="{{ft.titulo | uppercase }}">
           <app-foto url="{{ft.url}}" titulo="{{ft.titulo}}"></app-foto>
         </app-painel>
       </div>
