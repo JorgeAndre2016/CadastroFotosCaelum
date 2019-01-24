@@ -6,6 +6,19 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-12">
+        <form>
+          <div class="input-group">
+            <div class="input-group-btn mb-3 pl-3">
+              <a [routerLink]="['/cadastro']" class="btn btn-primary">
+                Nova Foto
+              </a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
         <app-painel *ngFor="let ft of fotos" titulo="{{ft.titulo}}">
           <app-foto url="{{ft.url}}" titulo="{{ft.titulo}}"></app-foto>
         </app-painel>
