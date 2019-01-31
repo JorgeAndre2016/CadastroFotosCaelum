@@ -9,7 +9,7 @@ import { map } from 'rxjs/operators';
 
 export class ListagemComponent implements OnInit {
 
-    title = 'Caelum';
+    title = 'Álbum de Fotos';
     fotos = new Array<any>();
 
     constructor(public http: HttpClient) {
