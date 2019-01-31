@@ -12,5 +12,7 @@ export class PainelComponent implements OnInit {
 
     constructor() { }
 
-    ngOnInit() { }
+    ngOnInit() {
+        this.titulo = this.titulo.length > 10 ? `${this.titulo.substr(0, 10)}...` : this.titulo;
+    }
 }
