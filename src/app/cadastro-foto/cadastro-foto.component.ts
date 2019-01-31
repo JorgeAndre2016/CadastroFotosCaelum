@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 
 export class CadastroFotoComponent implements OnInit {
 
+    title = 'Cadastro de Fotos';
+
     constructor() {}
 
     public ngOnInit() { }
