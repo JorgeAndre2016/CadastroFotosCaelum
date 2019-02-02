@@ -8,22 +8,22 @@
         <div class="col-4">
             <div class="mt-4">
                 <div class="input-group">
-                    <input (keyup)="0" type="text" [value]="foto.titulo" class="form-control" placeholder="Título" name="input1" aria-label="Título da Foto"
-                        aria-describedby="input1">
+                    <input (keyup)="0" type="text" [(ngModel)]="foto.titulo" class="form-control" placeholder="Título" name="titulo" aria-label="Título da Foto"
+                        aria-describedby="titulo">
                 </div>
             </div>
             <div class="mt-4">
-                <input (keyup)="0" type="text" [value]="foto.url" class="form-control" placeholder="Url" name="input2" aria-label="Url da Foto"
-                    aria-describedby="input2">
+                <input (keyup)="0" type="text" [(ngModel)]="foto.url" class="form-control" placeholder="Url" name="url" aria-label="Url da Foto"
+                    aria-describedby="url">
             </div>
             <div class="mt-4">
                 <div class="input-group">
-                    <textarea [value]="foto.descricao" class="form-control" rows="5" placeholder="Descrição" aria-label="Descrição da Foto"></textarea>
+                    <textarea [(ngModel)]="foto.descricao" class="form-control" rows="5" placeholder="Descrição" name="descricao" aria-label="Descrição da Foto"></textarea>
                 </div>
             </div>
             <div class="row mt-4">
                 <div class="col-6">
-                    <button type="submit" class="btn btn-outline-primary btn-block">Salvar</button>
+                    <button (click)="salvar();" class="btn btn-outline-primary btn-block">Salvar</button>
                 </div>
                 <div class="col-6">
                     <button [routerLink]="['']" class="btn btn-secondary btn-block">Voltar</button>
