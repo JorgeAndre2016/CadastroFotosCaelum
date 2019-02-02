@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { FotoComponent } from '../foto/foto.component';
 
 @Component({
@@ -6,12 +6,12 @@ import { FotoComponent } from '../foto/foto.component';
     templateUrl: './cadastro-foto.component.html'
 })
 
-export class CadastroFotoComponent implements OnInit {
+export class CadastroFotoComponent {
 
     public title = 'Cadastro de Fotos';
     public foto = new FotoComponent();
 
-    constructor() {}
-
-    public ngOnInit() { }
+    public salvar() {
+        console.log(this.foto);
+    }
 }
